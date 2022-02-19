@@ -10,7 +10,7 @@ buildGoApplication rec {
   buildInputs = [ jq ];
   nativeBuildInputs = [ unzip ];
   src = fetchurl {
-    url = "https://gitee.com/binaryeater/ptd-tool-orig/repository/archive/${version}.zip";
+    url = "https://github.com/d-housekeeper/ptd-tool-orig/archive/${version}.zip";
     sha256 = "04wcdjj4690qa07kcpv65brgjkkvizj1idlb2d2p60b794g0rwrn";
   };
   modules = ./gomod2nix.toml;
